@@ -38,7 +38,9 @@ export function EnergyUseHistory({
 
 	return (
 		<fieldset>
-			<legend className={`${titleClass} pb-6`}>Energy Use History <HelpButton keyName="energy_use_history.help"/></legend>
+			<legend className={`${titleClass} pb-6`}>
+				Energy Use History <HelpButton keyName="energy_use_history.help" />
+			</legend>
 			{/* Only show file upload errors if not in edit mode, or if in edit mode but errors exist and user is trying to process a file */}
 			{!isEditMode && (
 				<ErrorList

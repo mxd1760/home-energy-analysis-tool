@@ -71,7 +71,10 @@ export function EnergyUseHistoryChart({
 					<TableHead className="text-center">
 						<div className="flex flex-row">
 							<div className="text-left">Allowed Usage</div>
-                            <HelpButton keyName='allowed_usage_column.help' className='pl-2'/>
+							<HelpButton
+								keyName="allowed_usage_column.help"
+								className="pl-2"
+							/>
 						</div>
 					</TableHead>
 					<TableHead className="text-center">Start Date</TableHead>
@@ -84,7 +87,10 @@ export function EnergyUseHistoryChart({
 					<TableHead className="text-center">
 						<div className="flex flex-row">
 							<div className="text-right">Override Default</div>
-                            <HelpButton keyName='override_default_column.help' className='pl-2'/>
+							<HelpButton
+								keyName="override_default_column.help"
+								className="pl-2"
+							/>
 							{/* TODO: add help text */}
 							{/* <img src={HelpCircle} alt='help text' className='pl-2'/> */}
 						</div>
@@ -131,7 +137,11 @@ export function EnergyUseHistoryChart({
 						<TableRow key={index} variant={variant}>
 							<TableCell className="font-medium">{index + 1}</TableCell>
 							<TableCell>
-								<img src={analysisType_Image} alt="Analysis Type" className="inline-block mx-auto" />
+								<img
+									src={analysisType_Image}
+									alt="Analysis Type"
+									className="mx-auto inline-block"
+								/>
 							</TableCell>
 							<TableCell>{startDate.toLocaleDateString()}</TableCell>
 							<TableCell>{endDate.toLocaleDateString()}</TableCell>
